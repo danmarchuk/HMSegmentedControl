@@ -149,8 +149,9 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
     
     _backgroundColor = [UIColor whiteColor];
     self.opaque = NO;
-    _selectionIndicatorColor = [UIColor colorWithRed:52.0f/255.0f green:181.0f/255.0f blue:229.0f/255.0f alpha:1.0f];
+    _selectionIndicatorColor = [UIColor clearColor];
     _selectionIndicatorBoxColor = _selectionIndicatorColor;
+    _selectionIndicatorStripLayer.cornerRadius = 3;
 
     self.selectedSegmentIndex = 0;
     self.segmentEdgeInset = UIEdgeInsetsMake(0, 5, 0, 5);
@@ -301,7 +302,6 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
     self.selectionIndicatorArrowLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
     
     self.selectionIndicatorStripLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
-    self.selectionIndicatorStripLayer.cornerRadius = 3;
     
     self.selectionIndicatorBoxLayer.backgroundColor = self.selectionIndicatorBoxColor.CGColor;
     self.selectionIndicatorBoxLayer.borderColor = self.selectionIndicatorBoxColor.CGColor;
