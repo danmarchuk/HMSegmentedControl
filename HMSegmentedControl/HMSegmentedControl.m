@@ -301,6 +301,7 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
     self.selectionIndicatorArrowLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
     
     self.selectionIndicatorStripLayer.backgroundColor = self.selectionIndicatorColor.CGColor;
+    self.selectionIndicatorStripLayer.cornerRadius = 3;
     
     self.selectionIndicatorBoxLayer.backgroundColor = self.selectionIndicatorBoxColor.CGColor;
     self.selectionIndicatorBoxLayer.borderColor = self.selectionIndicatorBoxColor.CGColor;
