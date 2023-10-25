@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		543B015D2469B53100AF70BB /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B015C2469B53100AF70BB /* ExampleViewController.swift */; };
+		93C849212AE8996B00A62C40 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 93C849202AE8996A00A62C40 /* README.md */; };
 		9C1632E71DA57214001FB468 /* HMSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1632E41DA57214001FB468 /* HMSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C1632EC1DA57220001FB468 /* HMSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1632EA1DA57220001FB468 /* HMSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C1632ED1DA57220001FB468 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1632EB1DA57220001FB468 /* HMSegmentedControl.m */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		543B015B2469B53100AF70BB /* HMSegmentedControlExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControlExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		543B015C2469B53100AF70BB /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		93C849202AE8996A00A62C40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9C1632D81DA57134001FB468 /* HMSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1632E41DA57214001FB468 /* HMSegmentedControl-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
 		9C1632E51DA57214001FB468 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		9C1632CE1DA57134001FB468 = {
 			isa = PBXGroup;
 			children = (
+				93C849202AE8996A00A62C40 /* README.md */,
 				9C1632E91DA57220001FB468 /* HMSegmentedControl */,
 				9C1632F31DA572BA001FB468 /* HMSegmentedControlExample */,
 				9C1632E31DA57214001FB468 /* Framework */,
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C849212AE8996B00A62C40 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
