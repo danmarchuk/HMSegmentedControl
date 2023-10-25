@@ -611,7 +611,8 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
             if (!self.selectionIndicatorStripLayer.superlayer) {
                 self.selectionIndicatorStripLayer.frame = [self frameForSelectionIndicator];
 //                [self.scrollView.layer addSublayer:self.selectionIndicatorStripLayer];
-                
+                self.addGradientLayer;
+
                 if (self.selectionStyle == HMSegmentedControlSelectionStyleBox && !self.selectionIndicatorBoxLayer.superlayer) {
                     self.selectionIndicatorBoxLayer.frame = [self frameForFillerSelectionIndicator];
                     [self.scrollView.layer insertSublayer:self.selectionIndicatorBoxLayer atIndex:0];
@@ -619,13 +620,12 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
             }
         }
     }
-    self.addGradientLayer;
 }
 
 - (void)addGradientLayer {
     // Create a CAGradientLayer
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.frame = self.frameForSelectionIndicator;
+    gradientLayer.frame = [self frameForSelectionIndicator];
     
     // Define the gradient colors
     UIColor *startColor = [UIColor colorWithRed:0.56 green:0.81 blue:0.63 alpha:1.0];
@@ -638,6 +638,7 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
     
     // Set the corner radius for the gradient layer (if needed)
     gradientLayer.cornerRadius = 3;
+    _selectionIndicatorStripLayer.cornerRadius = 3;
     
     [self.scrollView.layer addSublayer:gradientLayer];
 }
