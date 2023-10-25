@@ -618,6 +618,27 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
             }
         }
     }
+    self.addGradientLayer;
+}
+
+- (void)addGradientLayer {
+    // Create a CAGradientLayer
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = self.frameForSelectionIndicator;
+    
+    // Define the gradient colors
+    UIColor *startColor = [UIColor colorWithRed:0.56 green:0.81 blue:0.63 alpha:1.0];
+    UIColor *endColor = [UIColor colorWithRed:0.24 green:0.75 blue:0.79 alpha:1.0];
+    gradientLayer.colors = @[(id)startColor.CGColor, (id)endColor.CGColor];
+    
+    // Define the gradient direction
+    gradientLayer.startPoint = CGPointMake(0.0, 0.5); // Left to right
+    gradientLayer.endPoint = CGPointMake(1.0, 0.5);
+    
+    // Set the corner radius for the gradient layer (if needed)
+    gradientLayer.cornerRadius = 3;
+    
+    [self.scrollView.layer addSublayer:gradientLayer];
 }
 
 - (void)removeTitleBackgroundLayers {
