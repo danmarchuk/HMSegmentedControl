@@ -610,7 +610,7 @@ NSUInteger HMSegmentedControlNoSegment = (NSUInteger)-1;
         } else {
             if (!self.selectionIndicatorStripLayer.superlayer) {
                 self.selectionIndicatorStripLayer.frame = [self frameForSelectionIndicator];
-                [self.scrollView.layer addSublayer:self.selectionIndicatorStripLayer];
+//                [self.scrollView.layer addSublayer:self.selectionIndicatorStripLayer];
                 
                 if (self.selectionStyle == HMSegmentedControlSelectionStyleBox && !self.selectionIndicatorBoxLayer.superlayer) {
                     self.selectionIndicatorBoxLayer.frame = [self frameForFillerSelectionIndicator];
